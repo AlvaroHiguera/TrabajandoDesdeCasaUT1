@@ -1,12 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Título 1 (Debe de ser unico en el documento)</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <h2>Enlace</h2>
+    <a href="https://github.com/AlvaroHiguera/TrabajandoDesdeCasaUT1">Enlace a github</a><br>
+    <a href="#ancla1">Saltar a la parte inferior</a><br>
+    <p id="ancla2">Destino del ancla 2.</p>
+    <br>
+    <h2>Lista desordenada.</h2>
+    <ul>
+        <li>Bulbasaur</li>
+        <li>Charmander</li>
+        <li>Squirtle</li>
+    </ul>
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Lasaña</li>
+        <li>Espaguetti</li>
+        <li>Pizza</li>
+    </ol>
+    <h2>Parrafo</h2>
+    <p>Caminando por el campo
+        En el suelo vi que había
+        Una carta ensangrentada
+        De cuarenta años hacia <br>
+
+        Era de un paracaidista
+        De la octava compañía
+        Que a su madre le escribía
+        Y la carta así decía <br>
+
+        Madre anoche en las trincheras
+        Entre el fuego y la metralla
+        Vía al enemigo correr
+        La noche estaba cerrada <br>
+
+        Apunte con mi fusil
+        Al tiempo que disparaba
+        Una luz que iluminó
+        El rostro que yo mataba <br>
+
+        Era mi amigo José
+        Compañero de la escuela
+        Con quien tanto yo jugué
+        A soldados y a trincheras <br>
+
+        Ahora el juego era verdad
+        Y a mi amigo ya lo entierran
+        Madre yo quiero morir
+        Ya estoy harto de esta guerra<br>
+
+        Madre si vuelvo a escribir
+        Tal vez sea desde el cielo
+        Donde encontrare a José
+        Y jugaremos de nuevo<br>
+
+        Si mi sangre fuera tinta
+        Y mi corazón tintero
+        Con las sangre de mis venas
+        Te escribiría: Te quiero
+    </p>
+    <h2>Span</h2>
+    <span><strong>Soy una linea rebelde</strong></span>
+    <h2>Div</h2>
+    <div>Esta etiqueta crea una capa, muy util para los estilos.</div>
+
+    <h2>Tabla</h2>
+
+    <table>
+        <theader>
+            <tr>
+                <th colspan="3"> Titulo</th>
+            </tr>
+        </theader>
+        <tbody>
+            <tr>
+                <td rowspan="2">Autores y empresasde apoyo</td>
+                <td>Miguel Angel</td>
+                <td>Enrique</td>
+            </tr>
+            <tr>
+                <td>Ceramica Arevalo</td>
+                <td>Carracafria Inversiones</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">1980/actualidad</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Formulario</h2>
+
+    <form name="formulariocompleto1" id="formulariocaompleto1id" action="" method="">
+        <fieldset>
+            <legend>Formulario completo</legend>
+            <label for="campotexto1id">Nombre: </label>
+            <input type="text" name="campotexto1" id="campotexto1id" placeholder="Introduce el nombre" required><br>
+
+            <label for="areatexto1id">Comentarios: </label><br>
+            <textarea name="areatexto1" id="areatexto1id" cols="60" rows="15"
+                placeholder="Comentarios aquí"></textarea><br>
+
+            <label for="campobusquieda1id">Termino a buscar: </label>
+            <input type="search" id="campobusquieda1id" name="campobusquieda1"
+                placeholder="Intrduce el término de búsqueda" required><br>
+
+            <label for="campocontraseña1id">Contraseña: </label>
+            <input type="password" id="campocontraseña1id" placeholder="Intrduce contraseña" required><br>
+
+            <label for="fichero1id">Escoja el fichero: </label>
+            <input type="file" id="fichero1id" name="fichero1" required><br>
+
+            <label for="camponumero1id">Introduce la fecha de nacimiento: </label>
+            <input type="date" name="camponumero1" id="camponumero1id" required><br>
+
+            <label for="campourl1id">Campo de tipo url: </label>
+            <input type="url" name="campourl1" id="campourl1id" required><br>
+
+            <label for="campoemail1id">Ponga aquí su email: </label>
+            <input type="email" name="campoemail1" id="campoemail1id" required><br>
+
+            <label for="campotiempo1id">Campo de tipo tiempo: </label>
+            <input type="time" name="campotiempo1" id="campotiempo1id" required><br>
+
+            <label for="camponumero1id">Campo de tipo numero: </label>
+            <input type="number" name="camponumreo1" id="camponumero1id" required><br>
+
+            <label for="campocolor1id">Campo de tipo color: </label>
+            <input type="color" name="campocolor1" id="campocolor1id" required><br>
+
+            <label for="camporango1id">Campo de tipo rango: </label>
+            <input type="range" name="camporango1" id="camporango1id" title="Selecciona un valor de rango" min="0"
+                max="10" value="5" step="1" onchange="mostrarValorRango(this.value)" required> <input type="text"
+                id="camporangomostrar"> <br>
+
+            <input type="text" name="dni1" id="dni1id" placeholder="Intrduce tu DNI"
+                title="Intrduce tu DNI: 8 numeros y una letra de la A a la Z" pattern="[0-9]{8}[A-Z]{1}" autofocus
+                required>
+
+            <input type="submit" value="Validar los datos del formulario y enviar."><br>
+
+        </fieldset>
+    </form>
+    <p id="ancla1">Destino del ancla 1.</p>
+    <a href="#ancla2">Saltar a la parte superior</a><br>
+
+    <h2>Pre</h2>
+    
+    <pre>
+        Con diez cañones por banda,
+        Viento en popa, a toda vela,
+        No corta el mar, sino vuela
+        Un velero bergantín.
+    </pre>
+
+    <h2>Imagenes</h2>
+
+    <img src="img/Jak3.jpg" alt="">
+
+    <h2>Videos</h2>
+
+    <video id="video1" width="1000" height="1000" autoplay controls loop>
+        <source src="videos/Westlife - Uptown Girl (Official Video).mp4" type="video/mp4">
+    </video>
+
+    <h2>Audio</h2>
+
+    <audio id="audio1"controls>
+        <source src="audio/Los de marras - Sexo en la calle.mp3">
+    </audio>
+
+
+
+    <script>
+        function mostrarValorRango(valor) {
+            document.getElementById("camporangomostrar").value = valor;
+        }
+    </script>
+
+
+
 </body>
+
 </html>
