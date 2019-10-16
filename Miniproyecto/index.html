@@ -155,12 +155,19 @@
 
             <label for="camporango1id">Campo de tipo rango: </label>
             <input type="range" name="camporango1" id="camporango1id" title="Selecciona un valor de rango" min="0"
-                max="10" value="5" step="1" onchange="mostrarValorRango(this.value)" required> <input type="text"
-                id="camporangomostrar"> <br>
+            max="10" value="5" step="1" onchange="mostrarValorRango(this.value)" required> <input type="text"
+            id="camporangomostrar"> <br>
 
             <input type="text" name="dni1" id="dni1id" placeholder="Intrduce tu DNI"
-                title="Intrduce tu DNI: 8 numeros y una letra de la A a la Z" pattern="[0-9]{8}[A-Z]{1}" autofocus
-                required>
+            title="Intrduce tu DNI: 8 numeros y una letra de la A a la Z" pattern="[0-9]{8}[A-Z]{1}" autofocus
+            required>
+
+            Sistema operativo:<input list="listaSSOO" id="listaSSOOinput">
+            <datalist id="listaSSOO" >
+                <option value="Windows 10 H2 2019">Windows 10 H2 2019</option>
+                <option value="Ubuntu 20.04">Ubuntu 20.04</option>
+                <option value="Debian 10.0 buster">Debian 10.0 buster</option>
+            </datalist>
 
             <input type="submit" value="Validar los datos del formulario y enviar."><br>
 
